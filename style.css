@@ -17,7 +17,7 @@ body{
     
 }
 
-.context h1, h2{
+.context h1, h2, p{
     text-align: center;
     color: #fff;
     font-size: 50px;
