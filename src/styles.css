@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	cursor: none;
 }
 
 html{
@@ -20,7 +21,7 @@ header{
 	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("../media/bgimage.jpg") center no-repeat;
 	background-size: cover;
 	position: relative;
- overflow: hidden;
+	overflow: hidden;
 }
 
 .container{
@@ -138,7 +139,7 @@ nav ul li a::after{
 	transition: opacity 650ms;
 	transform: scale(0);
 	opacity: 0;
- display: none;
+	display: none;
 }
 
 nav ul li a:hover::before,
@@ -195,14 +196,14 @@ nav ul li a:hover::after{
 	.brand{
 		font-size: 5rem;
 	}
-  
-  .overlay.menu-open,
-  nav.menu-open{
-	  display: flex;
-	  transform: scale(1);
-	  opacity: 1;
-  }
-  
+
+	.overlay.menu-open,
+	nav.menu-open{
+		display: flex;
+		transform: scale(1);
+		opacity: 1;
+	}
+
 }
 
 /* Events Section Styling */
@@ -351,16 +352,44 @@ footer {
 
 @media screen and (max-width: 900px) {
 	footer {
-			position: relative;
-			bottom: 0px;
+		position: relative;
+		bottom: 0px;
 	}
 
 	.main-content {
-			flex-wrap: wrap;
-			flex-direction: column;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 
 	.main-content .box {
-			margin: 5px 0;
+		margin: 5px 0;
 	}
+}
+
+/* Cursor CSS */
+
+.cursor {
+	width: 3rem;
+	height: 3rem;
+	border: 3px solid #909497;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+	backdrop-filter: grayscale();
+
+}
+
+.link-grow {
+	transform: scale(2);
+	color: white;
+}
+
+.hovered-link {
+	color: white;
+	z-index: 0;
 }
