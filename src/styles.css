@@ -22,6 +22,7 @@ header{
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
+	padding-top: 5em;
 }
 
 .container{
@@ -42,23 +43,23 @@ header{
 }
 
 nav{
-	padding-top: 5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 1.6rem;
+	margin-top: 5rem;
 }
 
-.brand{
+.navbar-brand{
 	font-size: 3rem;
 	font-weight: 700;
 	transform: translateX(-100rem);
 	animation: slideIn .5s forwards;
 }
 
-.brand span{
-	color: crimson;
+.navbar-brand span{
+	color: #dc143c;
 }
 
 .main-logo{
@@ -129,6 +130,12 @@ nav ul li a::after{
 	transform-origin: right;
 }
 
+.navbar.scrolled {
+	margin-top: 0;
+	background: rgba(1, 1, 1, 0.8);
+	transition: background 500ms;
+}
+
 .overlay{
 	background-color: rgba(0,0,0,.95);
 	position: fixed;
@@ -155,6 +162,21 @@ nav ul li a:hover::after{
 	width: fit-content;
 }
 
+/* Events Section Styling */
+
+#events , #quiz{
+	height: 100vh;
+}
+
+.heading{
+	width: fit-content;
+	margin: 20px auto;
+	background-color: #463333;
+	padding: 20px 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+}
+
 @keyframes slideIn {
 	from{
 
@@ -164,47 +186,6 @@ nav ul li a:hover::after{
 	}
 }
 
-@media screen and (max-width: 700px){
-
-	.menu-toggle{
-		display: block;
-	}
-
-	nav{
-		padding-top: 0;
-		display: none;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		height: 100vh;
-		text-align: center;
-	}
-
-	nav ul{
-		flex-direction: column;
-	}
-
-	nav ul li{
-		margin-top: 5rem;
-	}
-
-	nav ul li a{
-		margin: 0;
-		font-size: 2.5rem;
-	}
-
-	.brand{
-		font-size: 5rem;
-	}
-
-	.overlay.menu-open,
-	nav.menu-open{
-		display: flex;
-		transform: scale(1);
-		opacity: 1;
-	}
-
-}
 
 /* Events Section Styling */
 
@@ -391,7 +372,7 @@ nav ul li a:hover::after{
 footer {
 	position: relative;
 	padding-top: 3rem;
-	bottom: 0px;
+	bottom: 0;
 	width: 100%;
 	background: #065446;
 	color: #ffeadb;
@@ -513,7 +494,7 @@ footer {
 @media screen and (max-width: 900px) {
 	footer {
 		position: relative;
-		bottom: 0px;
+		bottom: 0;
 	}
 
 	.main-content {
@@ -540,8 +521,7 @@ footer {
 	transition: all 0.3s ease;
 	transition-property: background, transform;
 	transform-origin: 100% 100%;
-	backdrop-filter: grayscale();
-
+	backdrop-filter: grayscale(0);
 }
 
 .link-grow {
