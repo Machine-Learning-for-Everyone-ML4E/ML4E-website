@@ -215,7 +215,8 @@ nav ul li a:hover::after{
 	left:0;
 	height:100%;
     width: 80%; /*reduced the width, more responsive*/
-    background-attachment: fixed;
+	background-attachment: fixed;
+	padding: 1% 0;
 }
 #myCarousel h4{
 	font-size:50px;
@@ -401,7 +402,8 @@ nav ul li a:hover::after{
 	text-align: center;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
-	padding-top: 4%;
+	padding-top: 1%;
+	margin-top: 2%;
   }
 #contact-form {
 	max-width: 90%;
