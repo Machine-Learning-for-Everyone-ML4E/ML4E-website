@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	cursor: none;
+	cursor: default;
 }
 
 html{
@@ -216,7 +216,8 @@ nav ul li a:hover::after{
 /* Events Section */
 
 #myCarousel .carousel-item .mask {
-    position: absolute;
+	/* The carousel container takes now all the height of the leaflet by removing the absolute position */
+    /* position: absolute; */
     top: 0;
 	left:0;
 	height:100%;
