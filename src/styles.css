@@ -169,10 +169,6 @@ nav ul li a:hover::after{
 
 /* Events Section Styling */
 
-#events , #quiz{
-	height: 100vh;
-}
-
 .heading{
 	width: fit-content;
 	margin: 20px auto;
@@ -194,9 +190,6 @@ nav ul li a:hover::after{
 
 /* Section Styling */
 
-#quiz, #events{
-	height: 100vh;
-}
 
 .heading{
 	width: fit-content;
