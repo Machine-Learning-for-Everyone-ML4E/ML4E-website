@@ -214,7 +214,7 @@ nav ul li a:hover::after{
     top: 0;
 	left:0;
 	height:100%;
-    width: 100%;
+    width: 80%; /*reduced the width, more responsive*/
     background-attachment: fixed;
 }
 #myCarousel h4{
@@ -236,7 +236,7 @@ nav ul li a:hover::after{
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
 #myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
 #myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
-#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block;height: 100%; max-width: 470px; min-width: 200px;}
+#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; width: 67vh;}
 #myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{
 	-webkit-animation-duration: 1s;
     animation-duration: 1.2s;
