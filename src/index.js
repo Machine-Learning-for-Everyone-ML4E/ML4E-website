@@ -50,6 +50,11 @@ Array.from(navLinks).forEach(link => {
 });
 
 
+/**************Event JS *******************/
+$('#myCarousel').carousel({
+  interval: 3000,
+})
+
 /***************Quiz JS********************/
 function resizeInput() {
     $(this).attr('size', $(this).val().length);
