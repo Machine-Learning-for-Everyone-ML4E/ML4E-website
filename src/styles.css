@@ -401,6 +401,7 @@ nav ul li a:hover::after{
 	text-align: center;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
+	padding-top: 4%;
   }
 #contact-form {
 	max-width: 90%;
