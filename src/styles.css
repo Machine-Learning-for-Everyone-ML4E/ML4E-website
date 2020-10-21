@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	cursor: none;
+	cursor: none; 
 }
 
 html{
@@ -175,10 +175,6 @@ nav ul li a:hover::after{
 
 /* Events Section Styling */
 
-#events , #quiz{
-	height: 100vh;
-}
-
 .heading{
 	width: fit-content;
 	margin: 20px auto;
@@ -200,9 +196,6 @@ nav ul li a:hover::after{
 
 /* Section Styling */
 
-#quiz, #events{
-	height: 100vh;
-}
 
 .heading{
 	width: fit-content;
@@ -222,12 +215,14 @@ nav ul li a:hover::after{
 /* Events Section */
 
 #myCarousel .carousel-item .mask {
-    position: absolute;
+	/* The carousel container takes now all the height of the leaflet by removing the absolute position */
+    /* position: absolute; */
     top: 0;
 	left:0;
 	height:100%;
-    width: 100%;
-    background-attachment: fixed;
+    width: 80%; /*reduced the width, more responsive*/
+	background-attachment: fixed;
+	padding: 1% 0;
 }
 #myCarousel h4{
 	font-size:50px;
@@ -248,7 +243,7 @@ nav ul li a:hover::after{
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
 #myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
 #myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
-#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block;height: 100%; max-width: 470px; min-width: 200px;}
+#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; width: 67vh;}
 #myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{
 	-webkit-animation-duration: 1s;
     animation-duration: 1.2s;
@@ -413,6 +408,8 @@ nav ul li a:hover::after{
 	text-align: center;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
+	padding-top: 1%;
+	margin-top: 2%;
   }
 #contact-form {
 	max-width: 90%;
