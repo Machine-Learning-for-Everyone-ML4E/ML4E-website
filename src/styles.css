@@ -166,6 +166,42 @@ nav ul li a:hover::after{
 	width: fit-content;
 }
 
+/* About Us section styling */
+
+#about{
+	height: 100vh;
+}
+
+.about-heading {
+	width: fit-content;
+	margin: 20px auto;
+}
+
+.about-heading h1{
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.about-logo img{
+	width: 50%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Events Section Styling */
 
 #events , #quiz{
