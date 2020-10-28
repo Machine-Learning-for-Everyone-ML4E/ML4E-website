@@ -17,12 +17,13 @@
       <link rel="stylesheet" href="./src/styles.css">
       <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
       </head>
+      
       <body>
       <!-- CURSOR start-->
       <div class="cursor"></div>
       <!-- CURSOR end-->
       <header>
-          <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top scrolled">
+          <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-style navbar-dark scrolled">
               <div class="container">
               <!-- Brand -->
               <h1 class="navbar-brand"><a style="text-decoration: none; color: white;" href="index.html">ML<span>4</span>E <i class="fab fa-buffer"></i></a></h1>
@@ -72,23 +73,58 @@
 
  </header>
 
- <section id="about">
-   <div class="about-heading"><h1 class="animate__animated animate__fadeInRightBig">About ML4E</h1></div>
-  <div class="container about-logo">
-    <p><img src="./media/ml4e-logo.png" alt="">
-      ML4E is a group of zealous, tech savvy enthusiasts of NIT Rourkela who are in cahoots to promulgate the trend, knowledge and route to ace one of the most significant branches of modern computer science i.e. Machine Learning and Data Science. It is the trailblazer group, being the first of its kind in the college to undertake an entirely newfangled agenda under its umbrella. It has under its name, multifarious webinars, expert talks and discussions organised which saw a huge turn-up of curious participants. It intends to organize and conduct profuse competitions and hackathons online and offline to promote the culture of participation in a fairly untouched field in the college. The team is working with utmost dedication and drive on various projects to come up with solutions and ideasfor real world applications.
-    </p>
-  </div>
-  
- </section>
 
+ <!-- Events Section -->
  <section id="events">
-  <div class="heading"><h1 class="display">Events Section</h1></div>
+  <div class="heading"><h1 class="events-heading">Events</h1></div>
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="mask flex-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4>This Week, <br>
+                  Learn More About AI</h4>
+                <p>This is a completely free initiative by our club to teach AI. <br>
+                  Register below to enroll in the program.</p>
+                <a href="./register">REGISTER NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="./media/p1.jpeg" class="img-responsive" alt="slide" ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="mask flex-center">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 col-12 order-md-1 order-2">
+                <h4>This Week, <br>
+                  Learn More About Data Science</h4>
+                  <p>This is a completely free initiative by our club to teach Data Science. <br>
+                    Register below to enroll in the program.</p>
+                <a href="./register">REGISTER NOW</a> </div>
+              <div class="col-md-5 col-12 order-md-2 order-1"><img src="./media/p2.jpeg" class="img-responsive" alt="slide" ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev"> 
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+      <span class="sr-only">Previous</span> 
+    </a> 
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next"> 
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span> 
+    </a> 
+  </div>
 </section>
 
+<!-- QUIZ SECTION -->
 <section id="quiz">
-  <div class="heading"><h1 class="display">Q4E</h1></div>
-  <p style="color: black;">This a sample question for testing purposes ONLY.</p>
+  <div class="heading"><h1 class="quiz-heading">DAILY QUIZ</h1></div>
+  <p style="color: white;">This a sample question for testing purposes ONLY.</p>
   <hr />
   <form id="contact-form">
     <p>My
@@ -106,7 +142,7 @@
     <p>
       <textarea name="your-message" id="your-message" placeholder="(your ans here)" class="expanding" required></textarea>
     </p>
-    <p>
+    <p class="btnp">
       <button type="submit">
         <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
           <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
