@@ -723,7 +723,7 @@ background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
 
 .center .content ul li {
 	list-style: none;
-	line-height: 3rem;
+	margin: 15px auto;
 }
 
 .center ul li a{
