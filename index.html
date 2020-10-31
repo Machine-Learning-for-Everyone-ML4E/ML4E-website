@@ -11,9 +11,13 @@
       <!-- Bootstrap CDN -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+      <!-- Animate CSS CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      
       <link rel="stylesheet" href="./src/styles.css">
       <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
       </head>
+      
       <body>
       <!-- CURSOR start-->
       <div class="cursor"></div>
@@ -72,7 +76,7 @@
 
  <!-- Events Section -->
  <section id="events">
-  <div class="heading"><h1 class="display">Events Section</h1></div>
+  <div class="heading"><h1 class="events-heading">Events</h1></div>
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -119,8 +123,8 @@
 
 <!-- QUIZ SECTION -->
 <section id="quiz">
-  <div class="heading"><h1 class="display">Q4E</h1></div>
-  <p style="color: black;">This a sample question for testing purposes ONLY.</p>
+  <div class="heading"><h1 class="quiz-heading">DAILY QUIZ</h1></div>
+  <p style="color: white;">This a sample question for testing purposes ONLY.</p>
   <hr />
   <form id="contact-form">
     <p>My
@@ -138,7 +142,7 @@
     <p>
       <textarea name="your-message" id="your-message" placeholder="(your ans here)" class="expanding" required></textarea>
     </p>
-    <p>
+    <p class="btnp">
       <button type="submit">
         <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
           <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
@@ -155,10 +159,10 @@
   <footer id="foot">
    <div class="main-content">
      <div class="left box">
-       <h2>About Us</h2>
+       <!-- <h2>About Us</h2> -->
        <div class="about">
-         <img style=" max-width: 150px; height: 120px;" src="./media/ml4e-logo.png" alt="logo">
-         <p class="about-text">Machine Learning For Everybody</p><br>
+         <img style=" max-width: 190px; height: 170px;" src="./media/ml4e-logo.png" alt="logo">
+         <p class="about-text">Machine Learning For Everyone</p><br>
          <p class="about-text">The official Machine Learning and Data SCience club under Technical Society of SAC, NIT Rourkela.</p>
        </div>
        <div class="content">
