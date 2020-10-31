@@ -43,7 +43,7 @@ header{
 	color: #eeeeee;
 	font-size: 3rem;
 	cursor: pointer;
-	z-index: 1; 
+	z-index: 2; 
 	display: none;
 }
 .fixed-style {
@@ -51,7 +51,7 @@ header{
     top: 0;
     right: 0;
 	left: 0;
-	z-index: 0;
+	z-index: 2;
 }
 nav{
 	display: flex;
@@ -125,7 +125,7 @@ nav ul li a::after{
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background-color: crimson;
+	background-color: rgb(155,94,81);
 	left: 0;
 	transform: scaleX(0);
 	transition: all .5s;
@@ -173,17 +173,6 @@ nav ul li a:hover::after{
 	width: fit-content;
 }
 
-/* Events Section Styling */
-
-.heading{
-	width: fit-content;
-	margin: 20px auto;
-	background-color: #463333;
-	padding: 20px 50px;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px black;
-}
-
 @keyframes slideIn {
 	from{
 
@@ -193,26 +182,50 @@ nav ul li a:hover::after{
 	}
 }
 
+/* About Us section styling */
 
-/* Section Styling */
 
 
-.heading{
-	width: fit-content;
-	margin: 20px auto;
-	background-color: #463333;
-	padding: 20px 50px;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px black;
-}
 
-.display{
-	font-weight: 800;
-	color: white;
-	font-size: 3rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Events Section */
+#events{
+	height: 102vh;
+	margin: 0;
+	font-family: 'Lato', georgia;
+	text-align: center;
+	/* 
+	 */
+}
+
+.events-heading{
+	margin: 0 auto;
+	padding: 20px 50px;
+	font-size: 5rem;
+	font-weight: 800;
+	color: white;
+	background-color: #000000;
+	background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
 
 #myCarousel .carousel-item .mask {
 	/* The carousel container takes now all the height of the leaflet by removing the absolute position */
@@ -227,7 +240,7 @@ nav ul li a:hover::after{
 #myCarousel h4{
 	font-size:50px;
 	margin-bottom:15px;
-	color:#000;
+	color:white;
 	line-height:100%;
 	letter-spacing:0.5px;
 	font-weight:600;
@@ -235,7 +248,7 @@ nav ul li a:hover::after{
 #myCarousel p{
 	font-size:18px;
 	margin-bottom:15px;
-	color:#fff;
+	color: white;
 }
 #myCarousel .carousel-item a{background:#065446; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
 #myCarousel .carousel-item a:hover{background:#000; text-decoration:none;  }
@@ -252,9 +265,9 @@ nav ul li a:hover::after{
 }
 #myCarousel .container {max-width: 1430px;  }
 #myCarousel .carousel-item{height:100%; min-height:620px; }
-#myCarousel{position:relative; z-index: -1;background-color:  rgba(236, 181, 62, 0.95); }
+#myCarousel{position:relative; z-index: 1;background-color: #000000; background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);}
 
-.carousel-control-next, .carousel-control-prev{height:80px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
+.carousel-control-next, .carousel-control-prev{height:80px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #bbbfca; }
 
 .carousel-item {
     position: relative;
@@ -399,18 +412,44 @@ nav ul li a:hover::after{
   animation-name: slideInRight;
 }
 
+@media screen and (max-width: 900px) {
+	#events{
+		height: fit-content;
+		margin: 0;
+		padding: 0;
+	}
+	.events-heading{
+		font-size: 3.5rem;
+	}
+	#myCarousel h4{
+		font-size: 3rem;
+	}
+	#myCarousel p{
+		font-size: 1.5rem;
+	}
+}
+
 /************ Quiz Section Styling ************/
 #quiz {
+	height: 100vh;
+	margin: 0;
+	padding-top: 100px;
 	font-family: 'Lato', georgia;
 	font-size: 25px;
 	color: rgba(255, 255, 255, 1);
-	background-color: rgba(236, 181, 62, 0.95);
+	background-color: #000000;
+	background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%);
 	text-align: center;
 	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
-	padding-top: 1%;
-	margin-top: 2%;
-  }
+		}
+		.quiz-heading{
+			width: fit-content;
+			margin: 0 auto;
+			padding: 20px 50px;
+			font-size: 5rem;
+			font-weight: 800;
+		}
 #contact-form {
 	max-width: 90%;
 	margin: 0 auto;
@@ -525,7 +564,7 @@ nav ul li a:hover::after{
   }
   
   .send-icn:hover {
-	fill: rgba(0, 0, 0, 1);
+	fill: #00FFFF;
 	cursor: pointer;
   }
   
@@ -543,6 +582,7 @@ nav ul li a:hover::after{
   small {
 	display: block;
 	opacity: 0;
+	color: #00FFFF;
   }
   
   .website {
@@ -559,7 +599,20 @@ nav ul li a:hover::after{
   .website a {
 	color: white;
   }
-  
+		
+		@media screen and (max-width: 900px){
+			#quiz{
+				height: fit-content;
+				padding: 0;
+				margin: 0;
+			}
+			.quiz-heading{
+				font-size: 3.5rem;
+			}
+			.btnp {
+				margin: 0;
+			}
+		}
 
 
 /************ Footer Section Styling ************/
@@ -568,11 +621,14 @@ footer {
 	padding-top: 3rem;
 	bottom: 0;
 	width: 100%;
-	background: #065446;
+	/* background: #065446; */
 	color: #ffeadb;
 	font-size: 1.5rem;
 	font-weight: 600;
 	z-index: -1;
+	background-color: #166d3b;
+background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);
+
 }
 
 .main-content {
@@ -628,7 +684,7 @@ footer {
 	transition: 0.3s;
 }
 
-.left .content .social a span:hover {
+.left .content .social a span:hover{
 	background: #df6119;
 }
 
@@ -648,7 +704,7 @@ footer {
 	display: flex;
 }
 .right .content .fas:hover {
-	background: #df6119;
+	background-color: #df6119;
 }
 
 .right .content .text {
@@ -667,7 +723,7 @@ footer {
 
 .center .content ul li {
 	list-style: none;
-	line-height: 3rem;
+	margin: 15px auto;
 }
 
 .center ul li a{
@@ -678,7 +734,10 @@ footer {
 	padding: 5px;
 	font-size: 1.5rem;
 	font-weight: 600;
-	background: #382933;
+	background-color: #2d3436;
+	background-color: #090947;
+	background-color: #ca7968;
+	background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
 	text-align: center;
 }
 
@@ -710,7 +769,7 @@ footer {
 	border: 3px solid red;
 	border-radius: 50%; 
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 	
 	pointer-events: none;
 	transition: all 0.3s ease;
@@ -732,15 +791,13 @@ footer {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
 	background: #ddd;
-	width: 14px;
+	width: 15px;
 }
 
 ::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 10px #00000070;
-	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(315deg, #000000 0%, #b82e1f 74%);
-	border-radius: 10px;
+background-image: linear-gradient(315deg, #ca7968 0%, #0c0c0c 74%);
 }
